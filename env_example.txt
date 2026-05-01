@@ -1,0 +1,7 @@
+# Meshy API Key (3D 模型生成)
+MESHY_API_KEY=msy_gtkOs3y4eG6HC1eUCbWbVa7ZBQARCJehIrqN
+
+# Google Gemini API Key (草图美化成写实图片)
+# 获取: https://aistudio.google.com/apikey
+# 没有这个 Key 也能运行，只是会跳过草图美化步骤
+GEMINI_API_KEY=AIzaSyBU1SrCItWgAQAT7w4IShuGgkOVZiqtA4A
