@@ -10,5 +10,5 @@ COPY . .
 # 暴露端口
 EXPOSE 8000
 
-# 启动命令
-CMD ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "8000"]
+# 启动命令 (适配 Render 的动态端口)
+CMD sh -c "uvicorn server:app --host 0.0.0.0 --port ${PORT:-8000}"
