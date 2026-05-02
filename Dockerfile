@@ -7,6 +7,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+# 防止 Print 包含 emoji 导致报错
+ENV PYTHONIOENCODING=utf-8
+
 # 暴露端口
 EXPOSE 8000
 
